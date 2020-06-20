@@ -92,8 +92,35 @@ h2:after{
     display: block;
     color: #e67e22;
     margin-bottom:10px;
+    
+}
+.small-icon{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+     color: #e67e22;
+    font-size: 120%;
+    line-height: 120%;
+    vertical-align:middle;
 }
 
+/*-----------------------------*/
+/*link */
+
+a:link,
+a:visited{
+    color:#e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.2s,color 0.2s;
+}
+a:hover,
+a:active{
+    color:#555;
+    border-bottom: 1px solid transparent;
+    
+}
 
 /*-----------------------------*/
 /*Buttons */
@@ -195,6 +222,7 @@ header{
 .meals-showcase{
     list-style: none;
     width: 100%;
+    height: 100%;
     
 }
 .meals-showcase li{
@@ -218,4 +246,72 @@ header{
 .meal-photo img:hover{
     opacity: 1;
     transform: scale(1.5);
+}
+
+
+/*-----------------------------*/
+/* how it works*/
+
+.section-step{
+    margin-top: 300px;
+}
+
+.step-box:first-child{
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+    
+}
+.step-box:last-child{
+    padding-left: 3%;
+     margin-top: 70px;
+}
+.app-screen{
+    width: 40%; 
+}
+.work-step{
+    margin-bottom: 50px;
+     
+}
+.work-step div{
+    color: #e67e22;
+    display: inline-block;
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 15px
+}  
+
+.btn-app:link,
+.btn-app:visited{
+    border:0;
+}
+
+
+
+.btn-app img{
+    height:50px;
+    width: auto;
+    margin-right: 10px;
+}
+.section-feature {
+    margin-top:3.5%;
+}
+/*-----------------------------*/
+/* cities*/
+
+
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature{
+    margin-bottom: 5px;
 }
