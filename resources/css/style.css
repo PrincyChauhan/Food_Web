@@ -127,7 +127,8 @@ a:active{
 
 
 .btn:link,
-.btn:visited{
+.btn:visited,
+input[type=submit]{
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -138,7 +139,8 @@ a:active{
 }
 
 .btn-full:link,
-.btn-full:visited{
+.btn-full:visited,
+input[type=submit]{
     background-color:#e67e22;
     border: 1px solid #e67e22;
     color: #fff;
@@ -149,17 +151,20 @@ a:active{
 .btn-ghost:visited{
 /*    background-color:#e67e22;*/
      border: 1px solid #e67e22;
-    color: #fff;
+    color: #cf6d17;
    
 }
 
 .btn:hover,
-.btn:active{
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
     background-color: #cf6d17;
 }
 
 .btn-full:hover,
-.btn-full:active{
+.btn-full:active,
+input[type=submit {
     border: 1px solid #cf6d17;
 }
 .btn-ghost:hover,
@@ -175,6 +180,7 @@ header{
     background-size:cover;
     background-position: center; 
     height: 100vh;
+    background-attachment: fixed;
 }
 
 .hero-text-box{
@@ -315,3 +321,127 @@ header{
 .city-feature{
     margin-bottom: 5px;
 }
+
+
+/*-----------------------------*/
+/* testimonials*/
+
+
+
+
+.section-testimonials{
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(img/back-customers.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+    
+}
+
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote:before{
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top:-5px;
+    left:-3px;
+    
+}
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+cite img{
+    height: 50px;
+    border-radius:50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+
+/*-----------------------------*/
+/* sign up*/
+
+
+
+.section-plan{
+    background-color:#f4f4f4; 
+}
+.plan-box{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    color: black;
+    margin-left: 5%;
+    text-decoration: none;
+    box-shadow: 0 2px 2px #efefef;
+}
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.plan-box div:last-child{
+    text-align: center;
+    border: none;
+}
+plan-box div:first-child{
+   background-color: #fcfcfc;
+   border-bottom-left-radius: 5px;    
+   border-bottom-right-radius: 5px;    
+}
+.plan-price{
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color:#e67e22;
+}
+.plan-price span{
+    font-size:30%;
+    font-weight: 300;
+}
+.plan-price-meal{
+    font-size:80%; 
+}
+.plan-box ul{
+    list-style: none;
+}
+.plan-box ul li{
+    padding: 5px 0;
+}
+ 
+
+
+/*-----------------------------*/
+/* contact-form*/
+
+.contact-form{
+   width: 60%;
+    margin: 0 auto;
+}
+input[type=text],
+select[type=email],
+textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius:3px;
+    border: 1px solid #ccc;
+}
+
+textarea{
+    height: 100px;
+}
+
+input[type=checkbox]{
+    margin: 10px 5px 10px 0;
+}
+*:focus{outline: none;}
