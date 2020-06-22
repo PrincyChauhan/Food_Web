@@ -127,8 +127,7 @@ a:active{
 
 
 .btn:link,
-.btn:visited,
-input[type=submit]{
+.btn:visited{
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -139,8 +138,7 @@ input[type=submit]{
 }
 
 .btn-full:link,
-.btn-full:visited,
-input[type=submit]{
+.btn-full:visited{
     background-color:#e67e22;
     border: 1px solid #e67e22;
     color: #fff;
@@ -151,20 +149,17 @@ input[type=submit]{
 .btn-ghost:visited{
 /*    background-color:#e67e22;*/
      border: 1px solid #e67e22;
-    color: #cf6d17;
+    color: #e67e22;
    
 }
 
 .btn:hover,
-.btn:active,
-input[type=submit]:hover,
-input[type=submit]:active{
+.btn:active{
     background-color: #cf6d17;
 }
 
 .btn-full:hover,
-.btn-full:active,
-input[type=submit {
+.btn-full:active{
     border: 1px solid #cf6d17;
 }
 .btn-ghost:hover,
@@ -180,7 +175,6 @@ header{
     background-size:cover;
     background-position: center; 
     height: 100vh;
-    background-attachment: fixed;
 }
 
 .hero-text-box{
@@ -321,6 +315,7 @@ header{
 .city-feature{
     margin-bottom: 5px;
 }
+
 
 
 /*-----------------------------*/
